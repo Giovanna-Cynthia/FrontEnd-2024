@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+    <script>
+        document.write("LIBBS 2024" + "<br>") 
+
+        // Atividade de fixação:
+        var idade;
+        idade = prompt("Qual a sua idade?");
+        if (idade >= 12 && idade <= 17) {
+            alert("Você ainda pode brincar...")
+        } else if (idade >= 18 && idade <= 24){
+            alert("Parabens! Hora de tirar a habilitação...")
+        } else if ( idade >= 25 && idade <= 49 ){
+            alert("Já não precisa morar com os pais...")
+        } else if (idade >= 50) {
+            alert("Nada de neto???")
+        }
+
+
+
+        var nome;
+        var endereco = "Rua da minha casa";
+        var telefone = "11 98094-9660";
+        var studing;
+        const anoNascimento = 2005;
+
+        console.log(typeof(anoNascimento));
+        console.log(typeof(telefone));
+
+        telefone = 123
+        
+        console.log(typeof(telefone));
+
+        /*nome = prompt("Qual o seu nome?")
+
+        studing = confirm("Está estudando no momento?");
+        console.log(studing);
+
+        if (studing) {
+            alert("Parabens!!!");
+        } else {
+            alert("Vamos estudar...");
+        }*/
+
+        document.write(nome + "<br>");
+        document.write(endereco + "<br>");
+        document.write(telefone + "<br>");
+        document.write(anoNascimento + "<br>");
+
+        console.log("Estou aqui...");
+
+        //alert("Você chegou aqui...");
+
+    </script>
+</head>
+<body>
+    <p>
+        Escrito no HTML
+    </p>
+</body>
+</html>
