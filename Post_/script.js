@@ -1,4 +1,5 @@
 const form = document.getElementById("form")
+const message = document.getElementById("message")
 
 form.addEventListener("submit", (e) =>{
     const name = document.getElementById("name");
@@ -29,9 +30,8 @@ fetch("http://10.92.198.38:3001/signup", {
     headers: {"Content-type": "application/json; charset=UTF-8"}
 })
     .then((result) => result.json())
-    .then((data) => console.log(data))
+    .then((data) => message.innerText = data.message)
     .then((err) => console.log(err));
 
     console.log(name.value);
 })
-//enviar para o servidor
