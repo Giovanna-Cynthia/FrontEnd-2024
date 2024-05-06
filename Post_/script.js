@@ -23,7 +23,7 @@ const userData = JSON.stringify({
     image: ""
 })
 
-fetch("http://10.92.198.38:3001/singup", {
+fetch("http://10.92.198.38:3001/signup", {
     method: "Post",
     body: userData,
     headers: {"Content-type": "application/json; charset=UTF-8"}
